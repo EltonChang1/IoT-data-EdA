@@ -6,6 +6,19 @@ This repository contains the **BoTNeTIoT-L01** dataset, a comprehensive IoT botn
 
 The BoTNeTIoT-L01 dataset is derived from the original detection_of_IoT_botnet_attacks_N_BaIoT dataset, with significant improvements in terms of reduced redundancy by selecting features from a 10-second time window only.
 
+## Problem Statement
+
+**Can we accurately detect and classify IoT botnet attacks (Mirai and Gafgyt) in real-time network traffic using machine learning models trained on network flow statistics?**
+
+Specifically, we aim to answer the following research questions:
+1. **Binary Classification**: Can machine learning models reliably distinguish between benign IoT traffic and malicious botnet activity with high accuracy, precision, and recall?
+2. **Attack Type Identification**: Can we identify the specific botnet family (Mirai vs. Gafgyt) or attack subtype (UDP, TCP, SYN, etc.) from network traffic patterns alone?
+3. **Feature Importance**: Which network flow statistics are most discriminative for detecting botnet behavior, and can we reduce the feature space while maintaining detection performance?
+4. **Device-Specific Detection**: Do attack signatures vary across different IoT device types, and should device-specific models be trained for better detection accuracy?
+5. **Practical Deployment**: What is the optimal balance between model complexity, inference latency, and detection accuracy for deployment in real-time IDS systems?
+
+This dataset provides a robust benchmark with over 9.3 million labeled network flow samples from 9 different IoT device types, capturing authentic botnet attacks (Mirai and Gafgyt) alongside benign device behavior. The high-quality engineered features extracted from 10-second traffic windows enable machine learning models to learn discriminative patterns, making it an ideal platform for developing and validating next-generation IoT intrusion detection systems.
+
 ## Dataset Files
 
 ### 1. BotNeTIoT-L01_label_NoDuplicates.csv
